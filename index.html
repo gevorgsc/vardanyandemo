@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vardanyan &amp; Co. Textiles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <!-- Intro overlay (logo starts center, then flies to top-left and becomes header logo) -->
+  <div id="intro" class="intro" aria-hidden="true">
+    <div class="intro-bg"></div>
+    <div class="intro-center">
+      <img class="intro-logo" src="./assets/logo.png" alt="Vardanyan & Co. Textiles logo">
+      <div class="intro-sub">VARDANYAN &amp; CO. TEXTILES</div>
+    </div>
+  </div>
+
+  <!-- Fixed header -->
+  <header class="header" id="header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">
+          <img src="./assets/logo.png" alt="">
+        </span>
+        <span class="brand-name">Vardanyan &amp; Co.</span>
+      </a>
+
+      <div class="header-right">
+        <div class="lang" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="EN" type="button">EN</button>
+          <button class="lang-btn" data-lang="HY" type="button">HY</button>
+          <button class="lang-btn" data-lang="RU" type="button">RU</button>
+          <button class="lang-btn" data-lang="IT" type="button">IT</button>
+        </div>
+
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu overlay -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <button class="menu-close" id="menuClose" type="button" aria-label="Close menu">
+      <span></span>
+    </button>
+
+    <div class="menu-inner container">
+      <div class="menu-top">
+        <div class="menu-logo">
+          <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="menu-title" data-i18n="menuTitle">Navigation</div>
+      </div>
+
+      <nav class="menu-grid" aria-label="Site navigation">
+        <div class="menu-col">
+          <button class="menu-link" data-scroll="#about" type="button" data-i18n="navAbout">About</button>
+          <button class="menu-link" data-scroll="#materials" type="button" data-i18n="navMaterials">Materials</button>
+          <button class="menu-link" data-scroll="#work" type="button" data-i18n="navWork">Work</button>
+        </div>
+        <div class="menu-col">
+          <button class="menu-link" data-scroll="#markets" type="button" data-i18n="navMarkets">Markets</button>
+          <button class="menu-link" data-scroll="#quality" type="button" data-i18n="navQuality">Quality</button>
+          <button class="menu-link" data-scroll="#contact" type="button" data-i18n="navContact">Contact</button>
+        </div>
+        <div class="menu-col dim">
+          <div class="menu-small" data-i18n="menuSmall">
+            Luxury textiles, crafted with precision. Replace these sections later with your real content.
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-media video-bg" aria-hidden="true">
+        <video id="v1" autoplay muted playsinline preload="auto">
+          <source src="./assets/banner.mp4" type="video/mp4">
+        </video>
+        <video id="v2" muted playsinline preload="auto">
+          <source src="./assets/banner.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-kicker" data-i18n="heroKicker">TEXTILE MANUFACTURE • PRIVATE LABEL</div>
+        <h1 class="hero-title" data-i18n="heroTitle">We manufacture textiles for brands that don’t shout.</h1>
+        <p class="hero-sub" data-i18n="heroSub">
+          Private label production. Controlled volumes. Consistent quality.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact" data-i18n="ctaPrimary">Request a quote</a>
+        </div>
+      </div>
+</div>
+
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- Sections -->
+    <section class="section" id="about">
+      <div class="container grid2">
+        <div>
+          <div class="kicker" data-i18n="aboutKicker">ABOUT</div>
+          <h2 class="h2" data-i18n="aboutTitle">A partner for high‑quality textile production.</h2>
+          <p class="p" data-i18n="aboutText">
+            We combine craftsmanship with modern equipment to deliver stable quality, clean finishing, and reliable timelines.
+          </p>
+          <div class="meta" data-i18n="aboutMeta">Design • Cutting • Sewing • Finishing • Packaging</div>
+        </div>
+
+        <div class="cards">
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="card1Title">Quality</div>
+            <p class="cardText" data-i18n="card1Text">Consistent standards, inspection at every stage.</p>
+          </div>
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="card2Title">Reliability</div>
+            <p class="cardText" data-i18n="card2Text">Clear process, predictable delivery, honest communication.</p>
+          </div>
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="card3Title">Know‑how</div>
+            <p class="cardText" data-i18n="card3Text">We optimize materials and construction for your target market.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="materials">
+      <div class="container grid2">
+        <div>
+          <div class="kicker" data-i18n="materialsKicker">MATERIALS</div>
+          <h2 class="h2" data-i18n="materialsTitle">Fabrics selected for repeatability.</h2>
+          <p class="p" data-i18n="materialsText">
+            Cotton, blends, knits, and custom sourcing — chosen for stable color, feel, and performance across runs.
+          </p>
+          <div class="meta" data-i18n="materialsMeta">Cotton • Blends • Knits • Custom sourcing</div>
+        </div>
+
+        <div class="list">
+          <div class="listItem reveal"><div class="liTitle" data-i18n="mat1Title">Sampling</div><div class="liText" data-i18n="mat1Text">Swatches, lab dips, and approvals before bulk.</div></div>
+          <div class="listItem reveal"><div class="liTitle" data-i18n="mat2Title">Consistency</div><div class="liText" data-i18n="mat2Text">Same hand-feel and shade across repeated orders.</div></div>
+          <div class="listItem reveal"><div class="liTitle" data-i18n="mat3Title">Finishing</div><div class="liText" data-i18n="mat3Text">Clean finishing options tailored to your market.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="markets">
+      <div class="container grid2">
+        <div>
+          <div class="kicker" data-i18n="marketsKicker">MARKETS</div>
+          <h2 class="h2" data-i18n="marketsTitle">Built for brands, not the mass market.</h2>
+          <p class="p" data-i18n="marketsText">
+            We support private labels and studios that value calm design, measured production, and reliable repeats.
+          </p>
+          <div class="meta" data-i18n="marketsMeta">Private labels • Boutique brands • Interior studios</div>
+        </div>
+
+        <div class="cards">
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="mk1Title">Private label</div>
+            <p class="cardText" data-i18n="mk1Text">Your label, your specs — we deliver the execution.</p>
+          </div>
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="mk2Title">Boutique brands</div>
+            <p class="cardText" data-i18n="mk2Text">Controlled volumes with premium finishing.</p>
+          </div>
+          <div class="card reveal">
+            <div class="cardTitle" data-i18n="mk3Title">Studios</div>
+            <p class="cardText" data-i18n="mk3Text">Textiles for interiors, uniforms, and custom runs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="kicker" data-i18n="galleryKicker">FACTORY</div>
+        <div class="gallery-head">
+          <h2 class="h2" data-i18n="galleryTitle">Inside our production.</h2>
+          <p class="p gallery-sub" data-i18n="galleryText">
+            A controlled process, consistent teams, and real output — photographed on the floor.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gitem reveal" type="button" data-full="./assets/gallery/03.jpg" aria-label="Open image 3">
+            <img src="./assets/gallery/03.jpg" alt="Factory photo 1" loading="lazy">
+          </button>
+          <button class="gitem reveal" type="button" data-full="./assets/gallery/02.jpg" aria-label="Open image 2">
+            <img src="./assets/gallery/02.jpg" alt="Factory photo 2" loading="lazy">
+          </button>
+          <button class="gitem reveal" type="button" data-full="./assets/gallery/01.jpg" aria-label="Open image 1">
+            <img src="./assets/gallery/01.jpg" alt="Factory photo 3" loading="lazy">
+          </button>
+          <button class="gitem reveal" type="button" data-full="./assets/gallery/04.jpg" aria-label="Open image 4">
+            <img src="./assets/gallery/04.jpg" alt="Factory photo 4" loading="lazy">
+          </button>
+</div>
+      </div>
+    </section>
+
+    <section class="section parallax" id="work">
+      <div class="parallax-media" aria-hidden="true"></div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+
+      <div class="container parallax-content">
+        <h2 class="h2" data-i18n="parallaxTitle">Modern technology. Elegant textiles. Minimal waste.</h2>
+        <p class="p" data-i18n="parallaxText">Replace this with your real story — and we’ll tune the motion, spacing, and typography until it’s pixel‑perfect.</p>
+        <a class="btn primary" href="#materials" data-i18n="parallaxCta">See materials</a>
+      </div>
+    </section>
+
+    <section class="section" id="quality">
+      <div class="container grid2">
+        <div>
+          <div class="kicker" data-i18n="qualityKicker">QUALITY</div>
+          <h2 class="h2" data-i18n="qualityTitle">Certified thinking — measurable quality.</h2>
+          <p class="p" data-i18n="qualityText">Add your certificates and compliance badges here. We’ll style them like Silusi’s list section.</p>
+        </div>
+        <div class="list">
+          <div class="listItem reveal"><div class="liTitle">ISO 9001</div><div class="liText" data-i18n="li1">Quality management system</div></div>
+          <div class="listItem reveal"><div class="liTitle">OEKO‑TEX</div><div class="liText" data-i18n="li2">Textile safety for products</div></div>
+          <div class="listItem reveal"><div class="liTitle">REACH</div><div class="liText" data-i18n="li3">Chemical compliance</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <div class="kicker" data-i18n="contactKicker">CONTACT</div>
+          <h2 class="h2" data-i18n="contactTitle">Tell us what you’re producing.</h2>
+          <p class="p" data-i18n="contactText">This is a placeholder. Later we can wire a real form (Formspree/Getform) or your own backend.</p>
+        </div>
+
+        <div class="contactCard">
+          <div class="contactRow">
+            <div class="badge">info@vardanyan-textiles.com</div>
+            <div class="badge">+374 XX XX XX XX</div>
+          </div>
+          <a class="btn primary" href="mailto:info@vardanyan-textiles.com" data-i18n="contactCta">Email us</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section authority" id="trust">
+      <div class="container">
+        <div class="kicker" data-i18n="trustKicker">TRUST</div>
+        <h2 class="h2" data-i18n="trustTitle">Built for repeat business.</h2>
+        <p class="p" data-i18n="trustText">
+          Private labels. Boutique brands. Interior studios.
+        </p>
+      </div>
+    </section>
+
+<footer class="footer">
+      <div class="container footerRow">
+        <div class="small"><div class="badge">Vardanyan &amp; Co. Textiles</div><div style="height:10px"></div><div>Armenia</div></div>
+        <div class="small" data-i18n="copyright">
+          © 2026 Vardanyan &amp; Co. Textiles. All rights reserved.
+        </div>
+      </div>
+    
+
+
+</footer>
+  </main>
+
+  <script src="./script.js"></script>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lb-backdrop" data-close="true"></div>
+    <div class="lb-dialog" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lb-close" type="button" data-close="true" aria-label="Close">×</button>
+      <img class="lb-img" id="lbImg" alt="">
+    </div>
+  </div>
+
+</body>
+</html>
